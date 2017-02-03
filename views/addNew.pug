@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+	h1 Add a new student!
+
+	form(action="/addNew" method="post")
+		input(type="text" name="newStudentName")
+		input(type="submit" value="Add Student")
+	h1 Or remove a student.
+
+	form(action="/removeStudent" method="post")
+		input(type="text" name="removeStudentName")
+		input(type="submit" value="Remove Student")
